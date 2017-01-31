@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Aplicação Angular</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+
+		<body ng-app>
+
+			<nav ng-click="$event.preventDefault()">
+				<a href="#" ng-click="ativo='home'">Home</a>
+				<a href="#" ng-click="ativo='projeto'">Projetos</a>
+				<a href="#" ng-click="ativo='servico'">Serviços</a>
+				<a href="#" ng-click="ativo='contato'">Contato</a>
+			</nav>
+
+			<p>Por favor clique em um item do menu</p>
+			<p>Sua escolha <b>{{ativo}}</b></p>
+
+<!--Incluindo cdn angular do google  -->
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		
+
+		</body>
+
+</html>
